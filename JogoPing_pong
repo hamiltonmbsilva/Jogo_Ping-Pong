@@ -6,6 +6,7 @@
     <title>Jogo Ping-Pong</title>
 </head>
 <body>
+    <h1>Teste</h1>
     <canvas></canvas>
     <script>
         const canvasEl =  document.querySelector("canvas"), 
