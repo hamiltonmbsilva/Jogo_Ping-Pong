@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo Ping-Pong</title>
+    <style>
+        *{
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Teste</h1>
     <canvas></canvas>
     <script>
         const canvasEl =  document.querySelector("canvas"), 
@@ -17,9 +23,13 @@
             canvasEl.height = canvasCtx.height = window.innerHeight            
         }
 
-        function draw(){} 
+        function draw(){
+            canvasCtx.fillStyle = "#286047"
+            canvasCtx.fillRect(0,0,window.innerWidth, window.innerHeight)
+        } 
 
         setup()
+        draw()
 
     </script>
 </body>
